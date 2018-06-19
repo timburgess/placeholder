@@ -1,0 +1,12 @@
+[Unit]
+Description=placeholder
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node server/http.js
+User=tim
+WorkingDirectory=/home/tim/pelias/placeholder
+Restart=Always
+
+[Install]
+WantedBy=multi-user.target
