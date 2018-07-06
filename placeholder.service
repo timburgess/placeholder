@@ -6,6 +6,8 @@ After=network.target
 ExecStart=/usr/bin/node server/http.js
 User=tim
 WorkingDirectory=/home/tim/pelias/placeholder
+StandardOutput=file:/home/tim/log/placeholder.log
+StandardError=file:/home/tim/log/placeholder.err.log
 Restart=Always
 
 [Install]
