@@ -3,7 +3,7 @@ Description=placeholder
 After=network.target
 
 [Service]
-ExecStart=cmd/server.sh
+ExecStart=/usr/bin/node server/http.js
 User=tim
 WorkingDirectory=/home/tim/pelias/placeholder
 StandardOutput=file:/home/tim/log/placeholder.log
